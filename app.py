@@ -1,7 +1,4 @@
 import os
-import sys
-
-sys.stderr.write("HERE 1\n")
 
 from flask import Flask
 
