@@ -19,4 +19,4 @@ deploy-image:
 .PHONY: deploy-source
 deploy-source:
 	tanzu apps workload delete helloworld-python -n $(NAMESPACE) -y
-	tanzu apps workload apply -f Workload-source.yaml -y
+	tanzu apps workload apply -f Workload-source.yaml --build-env BP_CPYTHON_VERSION="3.10.*" -y
