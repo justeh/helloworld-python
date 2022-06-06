@@ -11,7 +11,12 @@ build:
 publish:
 	docker push bingbangboo/helloworld-python
 
-.PHONY: deploy
-deploy:
+.PHONY: deploy-image
+deploy-image:
 	tanzu apps workload delete helloworld-python -n $(NAMESPACE) -y
-	tanzu apps workload apply -f Workload.yaml -y
+	tanzu apps workload apply -f Workload-image.yaml -y
+
+.PHONY: deploy-source
+deploy-source:
+	tanzu apps workload delete helloworld-python -n $(NAMESPACE) -y
+	tanzu apps workload apply -f Workload-source.yaml -y
