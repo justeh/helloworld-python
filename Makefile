@@ -18,6 +18,10 @@ publish:
 delete:
 	tanzu apps workload delete helloworld-python -n $(NAMESPACE) -y
 
+.PHONY: get
+get:
+	tanzu apps workload get helloworld-python -n $(NAMESPACE)
+
 .PHONY: deploy-image
 deploy-image:
 	tanzu apps workload delete helloworld-python -n $(NAMESPACE) -y
