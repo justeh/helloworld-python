@@ -13,6 +13,9 @@ You can either have TAP do the entire CI/CD pipeline, or you can build a contain
 - Tanzu Application Platform
 - (Optional, if building an image locally): [Docker](https://www.docker.com) installed and running on your local machine,
   and a Docker Hub account configured.
+- Either edit the makefile, or [over-ride variable values on the Make command line](https://www.gnu.org/software/make/manual/html_node/Overriding.html), so as to set two required variables:
+  - ``NAMESPACE`` - the Kubernetes namespace into which the app will be deployed;<br />and
+  - ``DOCKER_HUB_USERNAME`` - your username on Docker Hub.
 
 ## Building and deploying from source code using TAP
 
