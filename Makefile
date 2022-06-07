@@ -1,7 +1,10 @@
 NAMESPACE:=balnbibarbi
 
-.PHONY: all
-all: build publish deploy-source
+.PHONY: source
+source: build publish deploy-source
+
+.PHONY: image
+image: build publish deploy-image
 
 .PHONY: build
 build:
