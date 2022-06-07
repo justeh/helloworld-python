@@ -1,4 +1,5 @@
 NAMESPACE:=balnbibarbi
+DOCKER_HUB_USERNAME:=bingbangboo
 
 .PHONY: source
 source: deploy-source
@@ -8,11 +9,11 @@ image: build publish deploy-image
 
 .PHONY: build
 build:
-	docker build -t balnbibarbi/helloworld-python .
+	docker build -t $(DOCKER_HUB_USERNAME)/helloworld-python .
 
 .PHONY: publish
 publish:
-	docker push bingbangboo/helloworld-python
+	docker push $(DOCKER_HUB_USERNAME)/helloworld-python
 
 .PHONY: delete
 delete:
