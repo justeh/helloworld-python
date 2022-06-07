@@ -9,7 +9,7 @@ You can either have TAP do the entire CI/CD pipeline, or you can build a contain
 
 - A Tanzu Kubernetes Grid cluster<br />
   Configure the correct context using a command of the form:<br />
-  ``kubectl config use-context my-cluster``
+  ``kubectl config use-context <MY-CONTEXT>``
 - Tanzu Application Platform
 - (Optional, if building an image locally): [Docker](https://www.docker.com) installed and running on your local machine,
   and a Docker Hub account configured.
@@ -31,8 +31,8 @@ You can either have TAP do the entire CI/CD pipeline, or you can build a contain
 
 1. Now you can make a request to your app and see the result.
    Either open the URL displayed above in your web browser,
-   or in ``curl`` using the command:<br />
-   ``curl http://helloworld-python.default.1.2.3.4.sslip.io``
+   or in ``curl`` using a command of the form:<br />
+   ``curl --verbose --fail <URL>``
 
 ## Removing
 
