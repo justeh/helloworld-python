@@ -1,7 +1,7 @@
 NAMESPACE:=balnbibarbi
 
 .PHONY: all
-all: build publish deploy
+all: build publish deploy-source
 
 .PHONY: build
 build:
