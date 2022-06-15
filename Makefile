@@ -23,6 +23,10 @@ delete:
 get:
 	tanzu apps workload get helloworld-python -n $(NAMESPACE)
 
+.PHONY: yaml
+yaml:
+	kubectl get deployment -n $(NAMESPACE) -o yaml
+
 .PHONY: deploy-image
 deploy-image:
 	tanzu apps workload delete helloworld-python -n $(NAMESPACE) -y
