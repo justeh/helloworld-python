@@ -1,5 +1,5 @@
-NAMESPACE:=balnbibarbi
-DOCKER_HUB_USERNAME:=bingbangboo
+NAMESPACE:=justeh
+#DOCKER_HUB_USERNAME:=bingbangboo
 
 .PHONY: source
 source: deploy-source

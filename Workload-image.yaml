@@ -1,7 +1,7 @@
 apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
-  namespace: balnbibarbi
+  namespace: justeh
   name: helloworld-python
   annotations:
     autoscaling.knative.dev/minScale: "1"

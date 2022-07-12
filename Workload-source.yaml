@@ -1,7 +1,7 @@
 apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
-  namespace: balnbibarbi
+  namespace: justeh
   name: helloworld-python
   annotations:
     autoscaling.knative.dev/minScale: "1"
@@ -13,4 +13,4 @@ spec:
     git:
       ref:
         branch: main
-      url: https://github.com/balnbibarbi/helloworld-python.git
+      url: https://github.com/justeh/helloworld-python.git
